@@ -1,11 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+import { Routes, Route } from "react-router-dom";
+import Register from "./components/Register";
 
-  return <div className="w-screen h-screen bg-red-500">Hello sexy</div>;
+function App() {
+  const activeMenu = false;
+  return (
+    <>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
