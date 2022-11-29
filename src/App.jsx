@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import Farmer_Register from "./pages/Farmer_Register";
 import Insurance_Registeration from "./pages/Insurance_Registeration";
+import Government_Registeration from "./pages/Government_Register";
 
 function App() {
   const activeMenu = false;
@@ -15,6 +16,10 @@ function App() {
         <Route
           path="/insurance_register"
           element={<Insurance_Registeration />}
+        />
+        <Route
+          path="/government_register"
+          element={<Government_Registeration />}
         />
       </Routes>
     </>
