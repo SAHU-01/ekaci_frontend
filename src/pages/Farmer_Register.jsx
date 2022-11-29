@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Stepper from "./Stepper";
-import StepperControl from "./StepperControl";
+import Stepper from "../components/Stepper";
+import StepperControl from "../components/StepperControl";
 import Account from "../components/steps/Account";
 import Test from "../components/steps/Plot_Desc";
 import { StepperContext } from "../contexts/StepperContext";
